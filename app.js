@@ -22,6 +22,8 @@ const colorRating = (vote) => {
 };
 
 const getMovie = (movies) => {
+	main.innerHTML = '';
+
 	movies.forEach((movie) => {
 		const { title, vote_average, poster_path, overview } = movie;
 		const movieEL = document.createElement('div');
